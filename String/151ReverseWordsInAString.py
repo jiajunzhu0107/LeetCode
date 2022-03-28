@@ -1,4 +1,15 @@
 # https://leetcode.com/problems/reverse-words-in-a-string/
+
+#straight forward
+class Solution:
+    def reverseWords(self, s: str) -> str:
+        words = s.split(' ')
+        words = [w.strip() for w in words if w.strip() != '']
+        print(words)
+        res_list = [words[i] for i in range(len(words)-1,-1,-1)]
+        return ' '.join(res_list)
+
+#O(1) extra space
 class Solution:
     def removeSpaces(self, s):
         left = 0

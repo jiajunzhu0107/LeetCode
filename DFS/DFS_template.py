@@ -17,3 +17,5 @@ def dfs(root, target):
     # if left is not None:
     #     return left
     return dfs(root.left, target), dfs(root.right, target)
+
+    
