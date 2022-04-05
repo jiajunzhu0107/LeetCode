@@ -1,0 +1,3 @@
+https://zhuanlan.zhihu.com/p/45986027?utm_source=wechat_session&utm_medium=social&utm_oi=1017558819743870976
+
+当子问题相互独立时，能且只能使用分治。存在重叠子问题时，动态规划是更好的算法。 In a word, 分治法 —— 各子问题独立；动态规划 —— 各子问题重叠。
