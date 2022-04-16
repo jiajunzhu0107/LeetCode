@@ -4,12 +4,10 @@ from heapq import heapify, heappop
 class Solution:
     def topKFrequent(self, words: List[str], k: int) -> List[str]:
         cnt = Counter(words)
-        cnt = [(-val,key) for key,val in cnt.items()]
-        heapify(cnt)
+        heap = [ (-val,key) for key, val in cnt.items() ]
+        heapify(heap)
         res = []
-        for _ in range(k):
-            freq,word = heappop(cnt)
-            res.append((freq,word))
-        res.sort()
-        res = [word for _,word in res]
+        for i in range(k):
+            _, word = heappop(heap)
+            res.append(word)
         return res
