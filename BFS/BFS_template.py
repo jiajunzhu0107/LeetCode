@@ -1,4 +1,5 @@
 from collections import deque
+from http.client import FOUND
 
 def bfs_by_queue(root):
     queue = deque([root]) # at least one element in the queue to kick start bfs

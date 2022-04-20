@@ -8,4 +8,3 @@ class Solution:
             a = heappop(nums)
             print(a)
         return a
-            
