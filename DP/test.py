@@ -1,7 +1,5 @@
-from collections import deque
+from typing import OrderedDict
 
-a = deque([])
-a.appendleft(8)
-a.appendleft(2)
-b = [1,3]
-print(b+a)
+
+a = OrderedDict([(1,4),(2,5),(3,6)])
+print(a.pop(2))
