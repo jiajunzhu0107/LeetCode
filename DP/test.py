@@ -1,2 +1,5 @@
-a = 'a'
-print(a[1])
+a = True
+a = not a
+a = not a
+if a :
+    print(1)
