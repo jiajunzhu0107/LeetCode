@@ -1,5 +1,6 @@
 a = True
-a = not a
-a = not a
-if a :
-    print(1)
+b = False
+c = True
+print(a + b)
+print(a+c)
+print(b+b)
